@@ -16,14 +16,15 @@ let when = [
   "while I was praying"
 ];
 
-let Who = who[Math.floor(Math.random() * who.length)];
-let Action = action[Math.floor(Math.random() * action.length)];
-let What = what[Math.floor(Math.random() * what.length)];
-let When = when[Math.floor(Math.random() * when.length)];
+let whoRandom = who[Math.floor(Math.random() * who.length)];
+let actionRandom = action[Math.floor(Math.random() * action.length)];
+let whatRandom = what[Math.floor(Math.random() * what.length)];
+let whenRandom = when[Math.floor(Math.random() * when.length)];
 
 window.onload = function() {
   //write your code here
 
   const excuseParagraph = document.getElementById("excuse");
-  excuseParagraph.innerHTML = Who + " " + Action + " " + What + " " + When;
+  excuseParagraph.innerHTML =
+    whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
 };
